@@ -71,4 +71,13 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+vim.o.termguicolors = true
+
+vim.o.ts = 4
+vim.o.sts = 4
+vim.o.sw = 4
+vim.o.expandtab = true
+
+vim.o.laststatus = 3
+
 -- vim: ts=2 sts=2 sw=2 et
