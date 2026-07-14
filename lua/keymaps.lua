@@ -58,6 +58,8 @@ if vim.g.neovide then
   vim.g.neovide_normal_opacity = 1
   vim.g.neovide_scale_factor = normal_sf
 
+  vim.o.guifont = 'FiraCode Nerd Font'
+
   vim.keymap.set({ 'n', 'v' }, '<C-+>', ':lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1<CR>')
   vim.keymap.set({ 'n', 'v' }, '<C-->', ':lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1<CR>')
   vim.keymap.set({ 'n', 'v' }, '<C-0>', ':lua vim.g.neovide_scale_factor = ' .. normal_sf .. '<CR>')

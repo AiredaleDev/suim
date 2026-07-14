@@ -66,6 +66,22 @@ return {
     url = 'https://git.sr.ht/~adigitoleo/haunt.nvim',
     opts = { define_commands = true },
   },
+  {
+    'Julian/lean.nvim',
+    event = { 'BufReadPre *.lean', 'BufNewFile *.lean' },
+
+    dependencies = {
+      'neovim/nvim-lspconfig',
+      'nvim-lua/plenary.nvim',
+
+      'nvim-telescope/telescope.nvim',
+    },
+
+    ---@type lean.Config
+    opts = {
+      mapping = true,
+    },
+  },
 }
 
 -- vim: ts=2 sts=2 sw=2 et
